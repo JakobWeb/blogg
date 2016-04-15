@@ -9,7 +9,9 @@
     <body>
         <?php
             $rubrik = $_POST['rubrik'];
-            $inlagg = $_POST['inlagg'];
+            $inlagg = nl2br($_POST['inlagg'], false);
+
+
 
             //Databasuppgifter
             $host = "localhost";
